@@ -20,4 +20,4 @@ jobs:
           envkey_DATABASE_URL: "postgresql://postgres:postgres@students_postgres_db_test:5432/students_test"
           file_name: ".env.test"
       - name: Run Tests
-        run: docker-compose -f docker-compose-tests.yml run node_sorteador_app npm run test:merge
+        run: docker-compose -f docker-compose-tests.yml run node_students_app npm run test:merge
